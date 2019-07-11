@@ -1,0 +1,25 @@
+{
+  "name": "webpackbasics",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/gurpreetbirdi/webpackBasics.git",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
+    "start:dev": "webpack-dev-server --mode=development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "babel-loader": "^8.0.6",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.32.2",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "not dead"
+  ]
+}
