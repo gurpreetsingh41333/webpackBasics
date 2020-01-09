@@ -5,8 +5,8 @@
   "repository": "https://github.com/gurpreetbirdi/webpackBasics.git",
   "license": "",
   "scripts": {
-    "build": "webpack",
-    "build:dev": "webpack --mode development",
+    "build": "webpack --mode=production",
+    "build:dev": "webpack --mode=development",
     "start:dev": "webpack-dev-server --mode development --open --hot",
     "analyse": "npm run build --env.analyse"
   },

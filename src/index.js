@@ -1,6 +1,6 @@
 import CSR from "../assets/CSR.png";
 import "./style.scss";
-import("./module-1").then(mod => {
+import(/* webpackChunkName: "namedmodule" */ "./module-1").then(mod => {
   const nothing = mod.default();
   const nothingToo = mod.useless();
 
