@@ -63,7 +63,9 @@ module.exports = (env = {}, argv = {}) => ({
   },
   plugins: [
     // Any option given to Webpack client can be captured on the "argv"
-    argv.mode === "development" ? new HtmlWebpackPlugin() : null,
+    argv.mode === "development" ? new HtmlWebpackPlugin({
+      template: path.join(__dirname, 'public', 'index.html'),
+    }) : null,
     argv.mode === "production"
       ? new MiniCssExtractPlugin({
         filename: "[name].css",
